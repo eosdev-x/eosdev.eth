@@ -8,18 +8,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         height: 100vh;
         background: #1a1a1a;
       }
       
       .social-container button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 200px;
-        height: 200px;
         padding: 20px;
         border: none;
         border-radius: 50%;
@@ -27,9 +20,8 @@
         box-shadow: 10px 10px 20px #101010,
                     -10px -10px 20px #2b2b2b;
         font-size: 1.2rem;
-        margin: 10px;
+        margin: 0 10px;
         transition: all 0.3s ease-in-out;
-        color: #77216F;
       }
       
       .social-container button:hover {
@@ -40,29 +32,25 @@
       
       .social-container a {
         text-decoration: none;
-        color: #77216F;
+        color: #d9d9d9;
       }
       
       h1 {
         color: #77216F;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 20px;
         background-color: #1a1a1a;
-        padding: 20px;
       }
     </style>
   </head>
   <body>
     <h1>eosdev's Social Media Links</h1>
     <div class="social-container">
-      <div style="display: flex; flex-wrap: wrap;">
-        <button><a href="https://iris.to/eosdev"></a>Nostr</button>
-        <button><a href="https://twitter.com/eosdev_"></a>Twitter</button>
-      </div>
-      <div style="display: flex; flex-wrap: wrap;">
-        <button><a href="https://beta.howl.social/"></a>Howl</button>
-        <button><a href="https://t.me/eosdev_eth"></a>Telegram</button>
-      </div>
+      <button><a href="https://iris.to/eosdev">Nostr</a></button>
+      <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
+      <button><a href="https://beta.howl.social">Howl</a></button>
+      <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
+      <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
     </div>
   </body>
 </html>
