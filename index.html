@@ -41,9 +41,10 @@
         margin-bottom: 1rem;
         text-align: justify;
         color: #2C001E;
+        margin-top: 35px;
       }
 
-      /* Dark-mode button styles */
+      /* Button styles */
       .button {
         background-color: #f0f0f0;
         border-radius: 50px;
@@ -65,7 +66,7 @@
         color: #2C001E;
       }
 
-      /* Social-container styles */
+      /* Neumorphism styles for buttons */
       .social-container {
         display: flex;
         justify-content: center;
@@ -172,9 +173,12 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
       />
       eosdev.eth &#128039 &#9889
     </h1>
-
-    <h2>Just a simple landing page for my socials.</h2>
+    
     <button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
+
+   
+    
+    
 
     <div class="social-container">
       <button><a href="https://iris.to/eosdev">Nostr</a></button>
@@ -183,7 +187,9 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
       <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
       <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
     </div>
-     /* Javascript dark-mode stuff, thanks Eric :) */
+     <h1>$BTC Price: <a id="btc-price"></a></h1>
+    <footer></footer>
+
     <script>
       function toggleDarkMode() {
         const darkMode = window.localStorage.getItem("darkMode");
@@ -198,5 +204,18 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
       }
       init();
     </script>
+    <script>
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd';
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const btcPrice = data.bitcoin.usd;
+        document.getElementById('btc-price').innerText = `$${btcPrice}`;
+      })
+      .catch(error => {
+        console.error('Error fetching BTC price:', error);
+      });
+  </script>
   </body>
 </html>
