@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>eosdev.eth</title>
-    <style>
-      
-      /* Neumorphism styles for buttons */
+<head>
+	<title>My Landing Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		 body {
+        background-color: #e0e5ec;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transition: background-color 0.5s ease;
+      }
+
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+
+		p {
+			margin-bottom: 1rem;
+			text-align: justify;
+		}
+
+		/* Button styles */
+		.button {
+			background-color: #f0f0f0;
+			border-radius: 50px;
+			border: none;
+			box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+			color: #333;
+			cursor: pointer;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 20px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.button:hover {
+			box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
+			color: #fff;
+		}
+    /* Neumorphism styles for buttons */
       .social-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: #1a1a1a;
       }
       
       .social-container button {
-        padding: 20px;
-        width: 200px;
-        height: 200px;
-        border: none;
-        border-radius: 50%;
-        background: #1a1a1a;
-        box-shadow: 10px 10px 20px #101010,
-                    -10px -10px 20px #2b2b2b;
-        font-size: 1.2rem;
-        margin: 0 10px;
-        transition: all 0.3s ease-in-out;
+			border-radius: 50px;
+			border: none;
+			box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+			color: #333;
+			cursor: pointer;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 20px;
+			transition: all 0.3s ease-in-out;
       }
       
       .social-container button:hover {
-        transform: translateY(-5px);
-        box-shadow: 12px 12px 24px #101010,
-                    -12px -12px 24px #2b2b2b;
+       box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
+			color: #fff;
       }
       
       .social-container a {
         text-decoration: none;
-        color: #77216F;
+        color: #333;
       }
-      
-      /* H1 styles */
-      h1 {
-        color: #77216F;
-        text-align: center;
-        margin-top: 20px;
-        background-color: #1a1a1a;
+
+		/* Dark mode styles */
+		body.dark-mode {
+			background-color: #333;
+			color: #f0f0f0;
+		}
+
+		.dark-mode h1 {
+			color: #f0f0f0;
+		}
+
+		.dark-mode p {
+			color: #f0f0f0;
+		}
+
+		.dark-mode .button {
+			background-color: #333;
+			color: #f0f0f0;
+			box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
+		}
+
+		.dark-mode .button:hover {
+			box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
+			color: #f0f0f0;
+		}
+     .dark-mode .social-container a {
+        text-decoration: none;
+        color: #f0f0f0;
       }
-      
-      /* Logo styles */
+    .dark-mode .social-container button {
+			background-color: #333;
+			color: #f0f0f0;
+			box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
+		}
+
+		.dark-mode .social-container button:hover {
+			box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
+			color: #f0f0f0;
+		}
+    
+    /* Logo styles */
       .logo {
-        height: 50px;
+        height: 100px;
         margin-right: 10px;
       }
-      
-      /* Body styles */
-      body {
-        margin: 0;
-        background-color: #1a1a1a;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <h1>
+    
+	</style>
+</head>
+<body>
+	 <h1>
       <img class="logo" src="
 https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh" alt="Your Logo">
       eosdev.eth
     </h1>
-    </style>
-  </head>
-  <body>
-    <div class="social-container">
+	<p>This is a landing page for my socials.</p>
+	<div class="social-container">
       <button><a href="https://iris.to/eosdev">Nostr</a></button>
       <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
       <button><a href="https://beta.howl.social">Howl</a></button>
       <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
       <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
     </div>
-  </body>
+	<button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
+
+	<script>
+		function toggleDarkMode() {
+			document.body.classList.toggle("dark-mode");
+		}
+	</script>
+</body>
 </html>
 
 
