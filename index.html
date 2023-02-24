@@ -137,14 +137,10 @@
       color: #77216F;
     }
 
-    .dark-mode .social-container a {
-      text-decoration: none;
-      color: #77216F;
-    }
-
-    .dark-mode .social-container button {
+    .dark-mode .social-container .link {
       background-color: #333;
-      color: #f0f0f0;
+      color: #77216F;
+      text-decoration: none;
       box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
     }
 
@@ -177,11 +173,11 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
   <button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
 
   <div class="social-container">
-    <button><a href="https://iris.to/eosdev">Nostr</a></button>
-    <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
-    <button><a href="https://beta.howl.social">Howl</a></button>
-    <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
-    <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
+    <a href="https://iris.to/eosdev"><button class="link">Nostr</button></a>
+    <a href="https://twitter.com/eosdev_"><button class="link">Twitter</button></a>
+    <a href="https://beta.howl.social"><button class="link">Howl</button></a>
+    <a href="https://t.me/eosdev_eth"><button class="link">Telegram</button></a>
+    <a href="https://mstdn.social/@eosdev"><button class="link">Mastodon</button></a>
   </div>
   <div class="btc">
     <h1>$BTC Price: <span id="btc-price"></span><br>$ATOM Price: <span id="atom-price"></span></h1>
