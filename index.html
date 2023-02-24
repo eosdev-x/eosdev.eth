@@ -44,7 +44,7 @@
         margin-top: 35px;
       }
 
-      /* Button styles */
+        /* Button styles */
       .button {
         background-color: #f0f0f0;
         border-radius: 50px;
@@ -66,7 +66,7 @@
         color: #2C001E;
       }
 
-      /* Neumorphism styles for buttons */
+        /* Neumorphism styles for buttons */
       .social-container {
         display: flex;
         justify-content: center;
@@ -102,7 +102,7 @@
         color: #2C001E;
       }
 
-      /* Dark mode styles */
+        /* Dark mode styles */
       body.dark-mode {
         background-color: #333;
         color: #77216F;
@@ -155,7 +155,7 @@
         color: #77216F;
       }
 
-      /* Logo styles */
+        /* Logo styles */
       .logo {
         height: 100px;
         margin-right: 10px;
@@ -189,7 +189,8 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
     </div>
      <h1>$BTC Price: <a id="btc-price"></a></h1>
     <footer></footer>
-
+    
+      /* Javascript for dark-mode, thanks Eric */
     <script>
       function toggleDarkMode() {
         const darkMode = window.localStorage.getItem("darkMode");
@@ -204,6 +205,8 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
       }
       init();
     </script>
+    
+      /* Javascript for grabbing $BTC price */
     <script>
     const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd';
 
