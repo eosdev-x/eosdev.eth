@@ -2,226 +2,221 @@
 <html>
 
 <head>
-    <title>eosdev.eth &#9889</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        background-color: #e0e5ec;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        transition: background-color 0.5s ease;
-      }
+  <title>eosdev.eth &#9889</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #e0e5ec;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.5s ease;
+    }
 
-      h1 {
-        background-color: #f0f0f0;
-        border-radius: 50px;
-        border: none;
-        box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-        color: #2C001E;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 20px;
-        transition: all 0.3s ease-in-out;
-      }
+    h1 {
+      background-color: #f0f0f0;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+      color: #2C001E;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
 
-      p {
-        margin-bottom: 1rem;
-        text-align: justify;
-      }
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
 
-      h2 {
-        margin-bottom: 1rem;
-        text-align: justify;
-        color: #2C001E;
-        margin-top: 35px;
-      }
-      
-      .btc {
-        margin-bottom: 100px;
-      }
+    h2 {
+      margin-bottom: 1rem;
+      text-align: justify;
+      color: #2C001E;
+      margin-top: 35px;
+    }
 
-      /* Button styles */
-      .button {
-        background-color: #f0f0f0;
-        border-radius: 50px;
-        border: none;
-        box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-        color: #2C001E;
-        cursor: pointer;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 20px;
-        transition: all 0.3s ease-in-out;
-      }
+    .btc {
+      margin-bottom: 100px;
+    }
 
-      .button:hover {
-        box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
-        color: #2C001E;
-      }
+    /* Button styles */
+    .button {
+      background-color: #f0f0f0;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+      color: #2C001E;
+      cursor: pointer;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
 
-      /* Neumorphism styles for buttons */
-      .social-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+    .button:hover {
+      box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
+      color: #2C001E;
+    }
 
-      .social-container button {
-        border-radius: 50px;
-        border: none;
-        box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-        color: #2C001E;
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-        margin: 25px;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 20px;
-        transition: all 0.3s ease-in-out;
-      }
+    /* Neumorphism styles for buttons */
+    .social-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-      .social-container button:hover {
-        box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
-        color: #2C001E;
-      }
+    .social-container button {
+      border-radius: 50px;
+      border: none;
+      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+      color: #2C001E;
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+      margin: 25px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
 
-      .social-container a {
-        text-decoration: none;
-        color: #2C001E;
-      }
+    .social-container button:hover {
+      box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
+      color: #2C001E;
+    }
 
-      /* Dark mode styles */
-      body.dark-mode {
-        background-color: #333;
-        color: #77216F;
-      }
+    .social-container a {
+      text-decoration: none;
+      color: #2C001E;
+    }
 
-      .dark-mode h1 {
-        color: #77216F;
-      }
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #333;
+      color: #77216F;
+    }
 
-      .dark-mode p {
-        color: #77216F;
-      }
+    .dark-mode h1 {
+      color: #77216F;
+    }
 
-      .dark-mode .button {
-        background-color: #333;
-        color: #77216F;
-        box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
-      }
+    .dark-mode p {
+      color: #77216F;
+    }
 
-      .dark-mode h1 {
-        background-color: #333;
-        color: #77216F;
-        box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
-      }
+    .dark-mode .button {
+      background-color: #333;
+      color: #77216F;
+      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
+    }
 
-      .dark-mode .button:hover {
-        box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
-        color: #77216F;
-      }
+    .dark-mode h1 {
+      background-color: #333;
+      color: #77216F;
+      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
+    }
 
-      .dark-mode .social-container a {
-        text-decoration: none;
-        color: #77216F;
-      }
+    .dark-mode .button:hover {
+      box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
+      color: #77216F;
+    }
 
-      .dark-mode .social-container button {
-        background-color: #333;
-        color: #f0f0f0;
-        box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
-      }
+    .dark-mode .social-container a {
+      text-decoration: none;
+      color: #77216F;
+    }
 
-      .dark-mode .social-container button:hover {
-        box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
-        color: #f0f0f0;
-      }
-       
-      .dark-mode h2 {
-        margin-bottom: 1rem;
-        text-align: justify;
-        color: #77216F;
-      }
+    .dark-mode .social-container button {
+      background-color: #333;
+      color: #f0f0f0;
+      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
+    }
 
-      /* Logo styles */
-      .logo {
-        height: 100px;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
+    .dark-mode .social-container button:hover {
+      box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
+      color: #f0f0f0;
+    }
 
-  <body>
-    <h1>
-      <img
-        class="logo"
-        src="
-https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh"
-        alt="Your Logo"
-      />
-      eosdev.eth &#128039 &#9889
-    </h1>
-    
-    <button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
+    .dark-mode h2 {
+      margin-bottom: 1rem;
+      text-align: justify;
+      color: #77216F;
+    }
 
-   
-    
-    
+    /* Logo styles */
+    .logo {
+      height: 100px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
 
-    <div class="social-container">
-      <button><a href="https://iris.to/eosdev">Nostr</a></button>
-      <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
-      <button><a href="https://beta.howl.social">Howl</a></button>
-      <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
-      <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
-    </div>
-    <div class="btc">
-     <h1>$BTC Price: <a id="btc-price"></a></h1>
-    </div>
-    <footer></footer>
+<body>
+  <h1>
+    <img class="logo" src="
+https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh" alt="Your Logo" />
+    eosdev.eth &#128039 &#9889
+  </h1>
 
-    <script>
-      function toggleDarkMode() {
-        const darkMode = window.localStorage.getItem("darkMode");
-        window.localStorage.setItem("darkMode", darkMode === "true" ? false : true);
+  <button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
+
+  <div class="social-container">
+    <button><a href="https://iris.to/eosdev">Nostr</a></button>
+    <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
+    <button><a href="https://beta.howl.social">Howl</a></button>
+    <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
+    <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
+  </div>
+  <div class="btc">
+    <h1>$BTC Price: <a id="btc-price"></a><br>$Atom Price: <span id="atom-price"></span></h1>
+  </div>
+  <footer></footer>
+
+  <script>
+    function toggleDarkMode() {
+      const darkMode = window.localStorage.getItem("darkMode");
+      window.localStorage.setItem("darkMode", darkMode === "true" ? false : true);
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function init() {
+      const darkMode = window.localStorage.getItem("darkMode");
+      if (darkMode === "true") {
         document.body.classList.toggle("dark-mode");
       }
-      function init() {
-        const darkMode = window.localStorage.getItem("darkMode");
-        if (darkMode === "true") {
-          document.body.classList.toggle("dark-mode");
-        }
-      }
-      init();
-    </script>
-    <script>
-    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd';
-
+    }
+    init();
+  </script>
+  <script>
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,cosmos&vs_currencies=usd';
     fetch(url)
       .then(response => response.json())
       .then(data => {
         const btcPrice = data.bitcoin.usd;
+        const atomPrice = data.cosmos.usd;
         document.getElementById('btc-price').innerText = `$${btcPrice}`;
+        document.getElementById('atom-price').innerText = `$${atomPrice}`;
       })
       .catch(error => {
-        console.error('Error fetching BTC price:', error);
+        console.error('Error fetching crypto prices:', error);
       });
   </script>
-  </body>
+</body>
+
 </html>
