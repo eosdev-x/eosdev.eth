@@ -27,7 +27,7 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 24px;
+      font-size: 2rem;
       margin-top: 20px;
       transition: all 0.3s ease-in-out;
     }
@@ -161,6 +161,35 @@
       height: 100px;
       margin-right: 10px;
     }
+    		/* Responsive styles */
+		@media only screen and (max-width: 768px) {
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			.button {
+				font-size: 14px;
+			}
+		}
+
+		@media only screen and (max-width: 576px) {
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			p {
+				font-size: 12px;
+			}
+
+			.button {
+				font-size: 12px;
+				padding: 8px 16px;
+			}
+		}
   </style>
 </head>
 
