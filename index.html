@@ -161,46 +161,49 @@
       height: 100px;
       margin-right: .5rem;
     }
-    		/* Responsive styles */
-		@media only screen and (max-width: 768px) {
-			h1 {
-				font-size: 1.5rem;
-			}
 
-			p {
-				font-size: 14px;
-			}
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
 
-			.button {
-				font-size: 14px;
-			}
+      p {
+        font-size: 14px;
+      }
+
+      .button {
+        font-size: 14px;
+      }
+
       .social-container {
         font-size: 0.8rem;
         display: flex;
         flex-wrap: wrap;
       }
-      .social-container button{
+
+      .social-container button {
         font-size: 0.8rem;
         padding: 1rem;
-	width: 100px;
+        width: 100px;
         height: 100px
       }
-		}
+    }
 
-		@media only screen and (max-width: 576px) {
-			h1 {
-				font-size: 1.2rem;
-			}
+    @media only screen and (max-width: 576px) {
+      h1 {
+        font-size: 1.2rem;
+      }
 
-			p {
-				font-size: 12px;
-			}
+      p {
+        font-size: 12px;
+      }
 
-			.button {
-				font-size: 12px;
-				padding: 8px 16px;
-			}
-		}
+      .button {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
+    }
   </style>
 </head>
 
@@ -240,7 +243,7 @@ https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh
     }
     init();
   </script>
-  
+
   <!-- Fetch BTC and ATOM price -->
   <script>
     const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,cosmos&vs_currencies=usd';
