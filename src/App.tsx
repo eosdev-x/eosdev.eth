@@ -117,8 +117,8 @@ function App() {
                 demo="https://cryptonicflux.netlify.app/"
               />
               <Project
-                title="Smart Home IoT"
-                description="IoT platform for managing smart home devices"
+                title="Mamadroid"
+                description="A landing page for Pro streamer Mamadroid to showcase content and connect with fanbase."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcyjOFn6LvKU2SUGA?embed=1&width=660"
                 tech={["React Native", "Node.js", "MQTT", "AWS"]}
                 github="https://github.com/eosdev-x/mamadroid-react"
