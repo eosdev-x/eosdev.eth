@@ -104,7 +104,7 @@ function App() {
                 title="Clean Sheets"
                 description="A developers cheat sheet website with a twist, click the command to copy to clipboard."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcw_mW6cmYzCWKlOg?embed=1&width=660"
-                tech={["TypeScript", "React", "Python", "TensorFlow"]}
+                tech={["TypeScript", "React", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/Clean-Sheets"
                 demo="https://cleansheets.tech/"
               />
@@ -112,7 +112,7 @@ function App() {
                 title="Cryptonicflux"
                 description="A landing page for Pro streamer Cryptonicflux to showcase content and connect with fanbase."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcxy27ttfnXAQKXtw?embed=1&width=660"
-                tech={["React", "Node.js", "MongoDB", "WebSocket"]}
+                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com"
                 demo="https://cryptonicflux.netlify.app/"
               />
@@ -120,7 +120,7 @@ function App() {
                 title="Mamadroid"
                 description="A landing page for Pro streamer Mamadroid to showcase content and connect with fanbase."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcyjOFn6LvKU2SUGA?embed=1&width=660"
-                tech={["React Native", "Node.js", "MQTT", "AWS"]}
+                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/mamadroid-react"
                 demo="https://mamadroid.com/"
               />
