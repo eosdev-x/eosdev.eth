@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Terminal } from 'lucide-react';
+import { Github, Linkedin, Mail, Terminal, Menu, X } from 'lucide-react';
 import Background from './components/Background';
 import Project from './components/Project';
 import Skill from './components/Skill';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <Background />
@@ -20,10 +23,12 @@ function App() {
               <Terminal className="h-6 w-6" />
               <span>eosdev</span>
             </motion.div>
+
+            {/* Desktop Menu */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex gap-6"
+              className="hidden md:flex gap-6"
             >
               {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
                 <a
@@ -35,7 +40,38 @@ function App() {
                 </a>
               ))}
             </motion.div>
+
+            {/* Hamburger Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-white"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </nav>
+
+          {/* Mobile Menu Overlay */}
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="absolute top-[72px] left-0 w-full bg-black/90 backdrop-blur-sm md:hidden"
+            >
+              <div className="flex flex-col items-center py-4">
+                {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    className="w-full py-4 text-center text-gray-300 transition-colors hover:text-white"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </header>
 
         {/* Hero Section */}
