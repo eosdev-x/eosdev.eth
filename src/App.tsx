@@ -113,12 +113,36 @@ function App() {
                 description="A landing page for Pro streamer Cryptonicflux to showcase content and connect with fanbase."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcxy27ttfnXAQKXtw?embed=1&width=660"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com"
+                github="https://github.com/eosdev-x/cryptonicflux"
                 demo="https://cryptonicflux.netlify.app/"
               />
               <Project
+                title="TJ Dorpers"
+                description="A website for famous Dorper sheep farm TJ Dorper’s Sheep Farm."
+                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYczlM7MoyErL0Y3pw?embed=1&width=660"
+                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
+                github="https://github.com/eosdev-x/tjdorpers"
+                demo="https://tjdorpers.com/"
+              />
+              <Project
+                title="Findy.wiki"
+                description="A powerful search tool for the infamous flight logs, just for fun."
+                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYc0IiIr9WFQrSbIOQ?embed=1&width=660"
+                tech={["JS", "CSS", "HTML"]}
+                github="https://github.com/eosdev-x/findy-wiki"
+                demo="https://findy.wiki/"
+              />
+              <Project
+                title="pastebin"
+                description="A pastebin for developers to share code and check correctness."
+                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYc1TGDeUu2CCxKiZw?embed=1&width=660"
+                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
+                github="https://github.com"
+                demo="https://atomlaunch.com/"
+              />
+              <Project
                 title="Mamadroid"
-                description="A landing page for Pro streamer Mamadroid to showcase content and connect with fanbase."
+                description="Streamer and content creator Mamadroid showcases content and connects with followers."
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcyjOFn6LvKU2SUGA?embed=1&width=660"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/mamadroid-react"

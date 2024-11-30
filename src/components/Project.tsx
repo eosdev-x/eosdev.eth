@@ -59,7 +59,7 @@ export default function Project({ title, description, image, tech, github, demo 
               className="flex items-center gap-2 text-gray-300 transition-colors hover:text-white"
             >
               <ExternalLink size={20} />
-              <span>Demo</span>
+              <span>Site</span>
             </a>
           )}
         </div>
