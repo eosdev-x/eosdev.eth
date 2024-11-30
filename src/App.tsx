@@ -119,10 +119,10 @@ function App() {
               <Project
                 title="Smart Home IoT"
                 description="IoT platform for managing smart home devices"
-                image="https://images.unsplash.com/photo-1558002038-bb4237b50b11?auto=format&fit=crop&w=800&q=80"
+                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcyjOFn6LvKU2SUGA?embed=1&width=660"
                 tech={["React Native", "Node.js", "MQTT", "AWS"]}
-                github="https://github.com"
-                demo="https://demo.com"
+                github="https://github.com/eosdev-x/mamadroid-react"
+                demo="https://mamadroid.com/"
               />
             </div>
           </div>
