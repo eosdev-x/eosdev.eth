@@ -150,7 +150,7 @@ function App() {
                 image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcxy27ttfnXAQKXtw?embed=1&width=660"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/cryptonicflux"
-                demo="https://cryptonicflux.netlify.app/"
+                demo="https://cryptonicflux.com/"
               />
               <Project
                 title="TJ Dorpers"
