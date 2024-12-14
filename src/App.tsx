@@ -137,12 +137,12 @@ function App() {
             </motion.h2>
             <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <Project
-                title="Clean Sheets"
-                description="A developers cheat sheet website with a twist, click the command to copy to clipboard."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcw_mW6cmYzCWKlOg?embed=1&width=660"
-                tech={["TypeScript", "React", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/Clean-Sheets"
-                demo="https://cleansheets.tech/"
+                title="calcity.info"
+                description="The priemier website for all things Cal City."
+                image="https://1drv.ms/i/c/6cb795a80d223b6a/IQRtTlv3Tl1sQpMliz2TlzIxAWzKC0-9z3BaD9EG-70Pzko?width=660"
+                tech={["TypeScript", "React", "CSS", "Vite", "HTML"]}
+                github="https://github.com/eosdev-x/calcity"
+                demo="https://calcity.info/"
               />
               <Project
                 title="Cryptonicflux"
@@ -171,7 +171,7 @@ function App() {
               <Project
                 title="pastebin"
                 description="A pastebin for developers to share code and check correctness."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYc1TGDeUu2CCxKiZw?embed=1&width=660"
+                image="https://1drv.ms/i/c/6cb795a80d223b6a/IQRUo4VVUTr5RbVuM1rW0IeqARHyvPZT-0n_LdEJHUT-glE?width=660"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com"
                 demo="https://atomlaunch.com/"
