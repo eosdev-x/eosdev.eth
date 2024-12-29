@@ -147,7 +147,7 @@ function App() {
               <Project
                 title="Cryptonicflux"
                 description="A landing page for Pro streamer Cryptonicflux to showcase content and connect with fanbase."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcxy27ttfnXAQKXtw?embed=1&width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/cryptonicflux.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9jcnlwdG9uaWNmbHV4LnBuZyIsImlhdCI6MTczNTUxMTg4OCwiZXhwIjoxNzY3MDQ3ODg4fQ.0mx1JPx-QBLeNOeToCv_BTc_4Z-Q--RgZ7kEEnmS3M8&t=2024-12-29T22%3A38%3A08.484Z"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/cryptonicflux"
                 demo="https://cryptonicflux.com/"
@@ -155,7 +155,7 @@ function App() {
               <Project
                 title="TJ Dorpers"
                 description="A website for famous Dorper sheep farm TJ Dorper’s Sheep Farm."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYczlM7MoyErL0Y3pw?embed=1&width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/tjdorpers.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS90amRvcnBlcnMucG5nIiwiaWF0IjoxNzM1NTExODQxLCJleHAiOjE3NjcwNDc4NDF9.sbqVMH5PotzgS3tEodCBJ_ypQNRuo_lmq3DSbTf19Ns&t=2024-12-29T22%3A37%3A21.878Z"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/tjdorpers"
                 demo="https://tjdorpers.com/"
