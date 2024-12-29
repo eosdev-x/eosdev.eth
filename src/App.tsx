@@ -139,7 +139,7 @@ function App() {
               <Project
                 title="calcity.info"
                 description="The priemier website for all things Cal City."
-                image="https://1drv.ms/i/c/6cb795a80d223b6a/IQRtTlv3Tl1sQpMliz2TlzIxAWzKC0-9z3BaD9EG-70Pzko?width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/calcityinfo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9jYWxjaXR5aW5mby5wbmciLCJpYXQiOjE3MzU1MTEwMTQsImV4cCI6MTc2NzA0NzAxNH0.bkU96bQHNArCoxr4Qv-jHpmw5JWOJTDKj83wMn7GZ0U&t=2024-12-29T22%3A23%3A34.090Z"
                 tech={["TypeScript", "React", "CSS", "Vite", "HTML"]}
                 github="https://github.com/eosdev-x/calcity"
                 demo="https://calcity.info/"
@@ -163,7 +163,7 @@ function App() {
               <Project
                 title="Findy.wiki"
                 description="A powerful search tool for the infamous flight logs, just for fun."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYc0IiIr9WFQrSbIOQ?embed=1&width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/findywiki.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9maW5keXdpa2kucG5nIiwiaWF0IjoxNzM1NTExMDM4LCJleHAiOjE3NjcwNDcwMzh9.HC-2_bXc3c_WzxoS0pyybJvFGMSCOZT45IyHPjq7sjA&t=2024-12-29T22%3A23%3A58.095Z"
                 tech={["JS", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/findy-wiki"
                 demo="https://findy.wiki/"
@@ -171,15 +171,15 @@ function App() {
               <Project
                 title="pastebin"
                 description="A pastebin for developers to share code and check correctness."
-                image="https://1drv.ms/i/c/6cb795a80d223b6a/IQRUo4VVUTr5RbVuM1rW0IeqARHyvPZT-0n_LdEJHUT-glE?width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/atombin-js.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9hdG9tYmluLWpzLnBuZyIsImlhdCI6MTczNTUxMDg5NywiZXhwIjoxNzY3MDQ2ODk3fQ.nE1kWmF3nnKobGGztExbnT99EQgiW_u38kYaCH8zYQ4&t=2024-12-29T22%3A21%3A37.699Z"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com"
-                demo="https://atomlaunch.com/"
+                github="https://github.com/eosdev-x/atombin"
+                demo="https://atombin.pages.dev/"
               />
               <Project
                 title="Mamadroid"
                 description="Streamer and content creator Mamadroid showcases content and connects with followers."
-                image="https://1drv.ms/i/s!Amo7Ig2olbdsgYcyjOFn6LvKU2SUGA?embed=1&width=660"
+                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/mamadroid.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9tYW1hZHJvaWQucG5nIiwiaWF0IjoxNzM1NTExMDcyLCJleHAiOjE3NjcwNDcwNzJ9.T44sKySTtrGpF78_ObMpa1dIVfBimNR4Bey5PwUHvO0&t=2024-12-29T22%3A24%3A32.170Z"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/mamadroid-react"
                 demo="https://mamadroid.com/"
