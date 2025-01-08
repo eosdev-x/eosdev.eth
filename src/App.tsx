@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Terminal, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Background from './components/Background';
 import Project from './components/Project';
-import Skill from './components/Skill';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuItems = [
+    { name: 'Projects', path: '#projects' },
+    { name: 'Github', path: '/github' },
+    { name: 'Contact', path: '/contact' },
+  ];
 
   return (
     <>
@@ -21,7 +27,7 @@ function App() {
               className="flex items-center gap-2 text-xl font-bold text-white"
             >
               <Terminal className="h-6 w-6" />
-              <span>eosdev</span>
+              <Link to="/" className="text-white">eosdev</Link>
             </motion.div>
 
             {/* Desktop Menu */}
@@ -30,14 +36,24 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="hidden md:flex gap-6"
             >
-              {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-gray-300 transition-colors hover:text-white"
-                >
-                  {item}
-                </a>
+              {menuItems.map((item) => (
+                item.name === 'Contact' || item.name === 'Github' ? (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-gray-300 transition-colors hover:text-white"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    className="text-gray-300 transition-colors hover:text-white"
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
             </motion.div>
 
@@ -59,15 +75,26 @@ function App() {
               className="absolute top-[72px] left-0 w-full bg-black/90 backdrop-blur-sm md:hidden"
             >
               <div className="flex flex-col items-center py-4">
-                {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    className="w-full py-4 text-center text-gray-300 transition-colors hover:text-white"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item}
-                  </a>
+                {menuItems.map((item) => (
+                  item.name === 'Contact' || item.name === 'Github' ? (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className="w-full py-4 text-center text-gray-300 transition-colors hover:text-white"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <a
+                      key={item.name}
+                      href={item.path}
+                      className="w-full py-4 text-center text-gray-300 transition-colors hover:text-white"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  )
                 ))}
               </div>
             </motion.div>
@@ -197,59 +224,9 @@ function App() {
               viewport={{ once: true }}
               className="text-center text-3xl font-bold text-white"
             >
-              Skills & Expertise
             </motion.h2>
-            <div className="mt-12 grid gap-6">
-              <Skill name="JavaScript/TypeScript" level={95} />
-              <Skill name="Rust" level={90} />
-              <Skill name="Python" level={85} />
-              <Skill name="Node.js" level={80} />
-              <Skill name="UI/UX Design" level={75} />
-              <Skill name="DevOps/Cloud" level={70} />
-            </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-20">
-          <div className="mx-auto max-w-3xl px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-white"
-            >
-              Let's Work Together
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="mt-4 text-gray-300"
-            >
-              I'm always open to new opportunities and interesting projects.
-              Feel free to reach out!
-            </motion.p>
-            <motion.a
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              href="mailto:tux@eosdev.org"
-              className="mt-8 inline-block rounded-full bg-blue-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-blue-600"
-            >
-              Get in Touch
-            </motion.a>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="py-8">
-          <div className="text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} eosdev. All rights reserved.
-          </div>
-        </footer>
       </div>
     </>
   );
