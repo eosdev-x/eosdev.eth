@@ -188,12 +188,12 @@ function App() {
                 demo="https://tjdorpers.com/"
               />
               <Project
-                title="Findy.wiki"
-                description="A powerful search tool for the infamous flight logs, just for fun."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/findywiki.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9maW5keXdpa2kucG5nIiwiaWF0IjoxNzM1NTExMDM4LCJleHAiOjE3NjcwNDcwMzh9.HC-2_bXc3c_WzxoS0pyybJvFGMSCOZT45IyHPjq7sjA&t=2024-12-29T22%3A23%3A58.095Z"
-                tech={["JS", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/findy-wiki"
-                demo="https://findy.wiki/"
+                title="TRB Oilfield Services"
+                description="Advanced Oilfield Solutions for Tomorrow's Challenges."
+                image="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/eosdev//trb_oil.png"
+                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
+                github="https://github.com/eosdev-x/trb-oil"
+                demo="https://trb-oil.pages.dev/"
               />
               <Project
                 title="pastebin"
