@@ -196,7 +196,7 @@ function App() {
                 demo="https://trb-oil.pages.dev/"
               />
               <Project
-                title="pastebin"
+                title="Atombin"
                 description="A pastebin for developers to share code and check correctness."
                 image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/atombin-js.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9hdG9tYmluLWpzLnBuZyIsImlhdCI6MTczNTUxMDg5NywiZXhwIjoxNzY3MDQ2ODk3fQ.nE1kWmF3nnKobGGztExbnT99EQgiW_u38kYaCH8zYQ4&t=2024-12-29T22%3A21%3A37.699Z"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
