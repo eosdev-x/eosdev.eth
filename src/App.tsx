@@ -166,7 +166,7 @@ function App() {
               <Project
                 title="calcity.info"
                 description="The priemier website for all things Cal City."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/calcityinfo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9jYWxjaXR5aW5mby5wbmciLCJpYXQiOjE3MzU1MTEwMTQsImV4cCI6MTc2NzA0NzAxNH0.bkU96bQHNArCoxr4Qv-jHpmw5JWOJTDKj83wMn7GZ0U&t=2024-12-29T22%3A23%3A34.090Z"
+                image="/screenshots/calcity.png"
                 tech={["TypeScript", "React", "CSS", "Vite", "HTML"]}
                 github="https://github.com/eosdev-x/calcity"
                 demo="https://calcity.info/"
@@ -174,42 +174,39 @@ function App() {
               <Project
                 title="Cryptonicflux"
                 description="A landing page for Pro streamer Cryptonicflux to showcase content and connect with fanbase."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/cryptonicflux.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9jcnlwdG9uaWNmbHV4LnBuZyIsImlhdCI6MTczNTUxMTg4OCwiZXhwIjoxNzY3MDQ3ODg4fQ.0mx1JPx-QBLeNOeToCv_BTc_4Z-Q--RgZ7kEEnmS3M8&t=2024-12-29T22%3A38%3A08.484Z"
+                image="/screenshots/cryptonicflux.png"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
                 github="https://github.com/eosdev-x/cryptonicflux"
                 demo="https://cryptonicflux.com/"
               />
               <Project
-                title="TJ Dorpers"
-                description="A website for famous Dorper sheep farm TJ Dorper’s Sheep Farm."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/tjdorpers.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS90amRvcnBlcnMucG5nIiwiaWF0IjoxNzM1NTExODQxLCJleHAiOjE3NjcwNDc4NDF9.sbqVMH5PotzgS3tEodCBJ_ypQNRuo_lmq3DSbTf19Ns&t=2024-12-29T22%3A37%3A21.878Z"
+                title="GigaTraffic"
+                description="Traffic information and resources for the Gigafactory area."
+                image="/screenshots/gigatraffic.png"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/tjdorpers"
-                demo="https://tjdorpers.com/"
+                demo="https://gigatraffic.org/"
               />
               <Project
-                title="TRB Oilfield Services"
-                description="Advanced Oilfield Solutions for Tomorrow's Challenges."
-                image="https://eivvclmcyhtilruderyw.supabase.co/storage/v1/object/public/eosdev//trb_oil.png"
+                title="Dakota Ranch"
+                description="Dakota Dorpers - premium sheep farm showcasing Dorper sheep breeding."
+                image="/screenshots/dakotaranch.png"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/trb-oil"
-                demo="https://trb-oil.pages.dev/"
+                demo="https://dakotaranch.club/"
               />
               <Project
-                title="Atombin"
-                description="A pastebin for developers to share code and check correctness."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/atombin-js.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9hdG9tYmluLWpzLnBuZyIsImlhdCI6MTczNTUxMDg5NywiZXhwIjoxNzY3MDQ2ODk3fQ.nE1kWmF3nnKobGGztExbnT99EQgiW_u38kYaCH8zYQ4&t=2024-12-29T22%3A21%3A37.699Z"
-                tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/atombin"
-                demo="https://atombin.pages.dev/"
+                title="tux.st"
+                description="Personal project hub focused on Linux, AI, and dev resources."
+                image="/screenshots/tux-st.png"
+                tech={["SvelteKit", "TypeScript", "TailwindCSS"]}
+                github="https://github.com/tuxclaw/tux.st"
+                demo="https://tux.st/"
               />
               <Project
-                title="Mamadroid"
-                description="Streamer and content creator Mamadroid showcases content and connects with followers."
-                image="https://huhghkvarocusxnrevpr.supabase.co/storage/v1/object/sign/site-images/eosdev-site/mamadroid.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzaXRlLWltYWdlcy9lb3NkZXYtc2l0ZS9tYW1hZHJvaWQucG5nIiwiaWF0IjoxNzM1NTExMDcyLCJleHAiOjE3NjcwNDcwNzJ9.T44sKySTtrGpF78_ObMpa1dIVfBimNR4Bey5PwUHvO0&t=2024-12-29T22%3A24%3A32.170Z"
+                title="palmdale.info"
+                description="The premier website for all things Palmdale."
+                image="/screenshots/palmdale.png"
                 tech={["Typescript", "JS", "Vite", "CSS", "HTML"]}
-                github="https://github.com/eosdev-x/mamadroid-react"
-                demo="https://mamadroid.com/"
+                demo="https://palmdale.info/"
               />
             </div>
           </div>
